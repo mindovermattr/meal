@@ -1,0 +1,58 @@
+.search-form{
+    margin-top: 15px;
+    display: flex;
+    align-items: flex-end;
+    column-gap: 25px;
+}
+
+.form{
+
+    &__select{
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+}
+
+.meal{
+    &__content{
+        margin-top: 25px;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        &>div{
+
+            animation: .5s cubic-bezier(0.16, 0.06, 0.84, 0.87) both fade
+        }
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+@for $i from 1 through 5 {
+    .meal__list>div {
+      
+      // :nth-child(1-14) 
+      &:nth-child(#{$i}) {
+        
+        // Delay the animation. Delay increases as items loop.
+        animation-delay: $i * (.3s);
+      }
+    }
+  }
+
+
+@keyframes fade {
+    from{
+        opacity: 0;
+        transform: translate(-125px,0px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px,0px);
+    }
+}

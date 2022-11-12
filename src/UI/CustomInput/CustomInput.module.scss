@@ -1,0 +1,26 @@
+.input{
+    margin-left: 15px;
+    
+   border: none;
+    &:focus{
+        outline: none;
+    }
+}
+
+.form{
+    display: flex;
+    width: 225px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}

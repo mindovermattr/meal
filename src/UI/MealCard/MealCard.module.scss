@@ -1,0 +1,23 @@
+$main-color-theme:rgba(13, 121, 13, 0.728);
+.img{
+    width: 100%;
+}
+.card{
+    box-shadow:8px 9px 2px 1px rgb(0 0 0 / 50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    border: 1px solid black;
+    padding-bottom: 25px;
+}
+
+.button{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.title{
+    font-size: 20px;
+}

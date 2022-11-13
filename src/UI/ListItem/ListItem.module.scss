@@ -1,0 +1,23 @@
+.list{
+    &__item{
+        display: flex;
+        font-display: row;
+        column-gap: 15px;
+        border: 1px solid green;
+        padding: 15px 0px 15px 0px;
+    }
+    &__img{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    &__description{
+        margin-bottom: 15px;
+    }
+}
+
+.img{
+    &__wrapper{
+            padding: 15px 0px 15px 15px;
+    }
+}

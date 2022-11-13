@@ -1,0 +1,16 @@
+$main-color-theme:rgba(13, 121, 13, 0.728);
+
+.btn{
+    padding: 10px 8px;
+    background-color: $main-color-theme;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    &:hover{
+        color: black;
+        background-color: white;
+        outline:1px solid black;
+        transition: all .5s;
+    }
+}

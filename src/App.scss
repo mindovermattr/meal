@@ -28,9 +28,11 @@ a{
   &__content{
     font-size: 24px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: left;
     column-gap: 25px;
     align-items: flex-end;
-    min-height: 4vh;   
+    min-height: 4vh; 
+    list-style: none;  
   }
 }
